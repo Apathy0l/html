@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* 床品 */
+        .bedding {
+            width: 1090px;
+            height: 789px;
+            box-sizing: border-box;
+            margin: 100px auto;
+
+        }
+
+        /* 头部文字 */
+        .bedding>.top {
+            display: flex;
+            width: 1090px;
+            height: 48px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+        }
+
+        .bedding>.top>.left {
+            flex-basis: 60px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .bedding>.top>.left:hover {
+            cursor: pointer;
+            color: #CC9756;
+        }
+
+        .bedding>.top>.center {
+            flex: 1;
+        }
+
+        .bedding>.top::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .bedding>.top>.right>ul>li {
+            float: left;
+            margin-left: 13px;
+        }
+
+        .bedding>.top>.right>ul>li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .bedding>.top>.right>ul span {
+            margin-right: 13px;
+            font-size: 17px;
+        }
+
+        .bedding>.top>.right>ul>li:last-child {
+            margin-left: 35px;
+        }
+
+        .bedding>.top>.right>ul>li:last-child::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        .bedding>.top>.right>ul>li>a:hover {
+            color: #CC9756;
+        }
+
+        .bedding>.top>.right>ul::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        /* 中间图片 */
+        .bedding>.middle {
+            width: 1090px;
+            height: 310px;
+            background-color: white;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            background-image: url(./img/banner.webp);
+        }
+
+        /* 底部卡片 */
+        .bedding>.bottom {
+            width: 1090px;
+            height: 411px;
+            box-sizing: border-box;
+        }
+
+        .bedding>.bottom>ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bedding>.bottom>ul>li {
+            width: 256px;
+            height: 361px;
+            cursor: pointer;
+        }
+
+        .bedding>.bottom>ul>li .top {
+            height: 256px;
+            background-color: #eaeaea;
+        }
+
+        .bedding>.bottom>ul>li .bottom {
+            height: 105px;
+        }
+
+        .bedding>.bottom>ul>li>.item1 {
+            background-image: url(./img/good1-1.webp);
+        }
+
+        .bedding>.bottom>ul>li>.item2 {
+            background-image: url(./img/good2-1.webp);
+        }
+
+        .bedding>.bottom>ul>li>.item3 {
+            background-image: url(./img/good3-1.webp);
+        }
+
+        .bedding>.bottom>ul>li>.item4 {
+            background-image: url(./img/good4-1.webp);
+        }
+
+        .bedding>.bottom>ul>li:nth-child(1):hover {
+            background-color: #f4f0ea;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .bedding>.bottom>ul>li:nth-child(1):hover .item1 {
+            background-image: url(./img/good1-2.webp);
+        }
+
+        .bedding>.bottom>ul>li:nth-child(2):hover {
+            background-color: #f4f0ea;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .bedding>.bottom>ul>li:nth-child(2):hover .item2 {
+            background-image: url(./img/good2-2.webp);
+        }
+
+        .bedding>.bottom>ul>li:nth-child(3):hover {
+            background-color: #f4f0ea;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .bedding>.bottom>ul>li:nth-child(3):hover .item3 {
+            background-image: url(./img/good3-2.webp);
+        }
+
+        .bedding>.bottom>ul>li:nth-child(4):hover {
+            background-color: #f4f0ea;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .bedding>.bottom>ul>li:nth-child(4):hover .item4 {
+            background-image: url(./img/good4-2.webp);
+        }
+
+        /* 卡片文字 */
+        .bedding>.bottom>ul>li>.bottom div {
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .bedding>.bottom>ul>li>.bottom {
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+
+        .bedding>.bottom>ul>li>.bottom>.one,
+        .bedding>.bottom>ul>li>.bottom>.two {
+            font-weight: 700;
+        }
+
+        .bedding>.bottom>ul>li>.bottom>div:hover {
+            color: #b4a078;
+        }
+
+        .bedding>.bottom>ul>li>.bottom>.three {
+            color: #999;
+        }
+
+        .bedding>.bottom>ul>li>.bottom>.three span {
+            color: red;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bedding">
+        <div class="top">
+            <div class="left">床品</div>
+            <div class="center"></div>
+            <div class="right">
+                <ul>
+                    <li><a href="" title="四季款商品">四季款</a></li>
+                    <li><span>/</span><a href="" title="乳胶床垫商品">乳胶床垫</a></li>
+                    <li><span>/</span><a href="" title="乳胶枕商品">乳胶枕</a></li>
+                    <li><span>/</span><a href="" title="凉席蚊帐商品">凉席蚊帐</a></li>
+                    <li><span>/</span><a href="" title="四件套商品">四件套</a></li>
+                    <li><span>/</span><a href="" title="秋冬款商品">秋冬款</a></li>
+                    <li><span>/</span><a href="" title="四季床品商品">四季床品</a></li>
+                    <li><a href="" title="查看更多商品">查看更多</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 中间图片  -->
+        <div class="middle"></div>
+        <!-- 底部卡片 -->
+        <div class="bottom">
+            <ul>
+                <li>
+                    <div class="top item1"></div>
+                    <div class="bottom">
+                        <div class="one">原创调色 珠光色铸铁珐琅锅</div>
+                        <div class="two">22cm</div>
+                        <div class="three"><span>￥1999</span><strike>¥2888</strike></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top item2"></div>
+                    <div class="bottom">
+                        <div class="one">喜临门进口乳胶椰棕床垫</div>
+                        <div class="two">1500mm*1900mm</div>
+                        <div class="three"><span>￥1999</span><strike>¥2888</strike></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top item3"></div>
+                    <div class="bottom">
+                        <div class="one">全友家居两用椰棕弹簧床垫</div>
+                        <div class="two">1500mm*1900mm</div>
+                        <div class="three"><span>￥1999</span><strike>¥2888</strike></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top item4"></div>
+                    <div class="bottom">
+                        <div class="one">网易严选 100支长绒棉轻奢四件套</div>
+                        <div class="two">1.8m</div>
+                        <div class="three"><span>￥1999</span><strike>¥2888</strike></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
