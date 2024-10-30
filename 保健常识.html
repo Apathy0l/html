@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保健常识</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header,
+        .footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .flex-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        section {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>保健常识</h1>
+            <nav class="navbar">
+                <a href="#nutrition">营养饮食</a>
+                <a href="#exercise">运动锻炼</a>
+                <a href="#stress">压力管理</a>
+            </nav>
+        </header>
+        <main class="content">
+            <section id="nutrition" class="category">
+                <h2>营养饮食</h2>
+                <article class="flex-item">
+                    <img src="./img/nutrition.jpg" alt="营养小贴士">
+                    <div class="text-content">
+                        <h3>多吃蔬果</h3>
+                        <p>确保每日五份蔬果，丰富的纤维和维生素有助于提升免疫力。</p>
+                    </div>
+                </article>
+                <!-- 更多营养饮食相关文章... -->
+            </section>
+            <section id="exercise" class="category">
+                <h2>运动锻炼</h2>
+                <article class="flex-item">
+                    <img src="./img/exercise.jpg" alt="运动小贴士">
+                    <div class="text-content">
+                        <h3>定期有氧运动</h3>
+                        <p>每周至少150分钟的中等强度有氧运动，如快走、游泳，有益心脏健康。</p>
+                    </div>
+                </article>
+                <!-- 更多运动锻炼相关文章... -->
+            </section>
+            <section id="stress" class="category">
+                <h2>压力管理</h2>
+                <article class="flex-item">
+                    <img src="./img/stress.jpg" alt="减压小贴士">
+                    <div class="text-content">
+                        <h3>深呼吸练习</h3>
+                        <p>每天进行几次深呼吸练习，帮助放松身心，减轻压力。</p>
+                    </div>
+                </article>
+                <!-- 更多压力管理相关文章... -->
+            </section>
+        </main>
+        <footer class="footer">
+            <p>版权所有 &copy; 2023 保健常识网</p>
+        </footer>
+    </div>
+</body>
+
+</html>
