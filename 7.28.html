@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        #content {
+            display: flex;
+        }
+        .box {
+            flex-grow: 1;
+            border: 3px solid rgba(0, 0, 0, 0.2);
+        }
+        .box1 {
+            flex-grow: 2;
+            border: 3px solid rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div style="background-color:red;">A</div>
+        <div  style="background-color:lightblue;">B</div>
+        <div  style="background-color:yellow;">C</div>
+        <div style="background-color:brown;">D</div>
+        <div  style="background-color:lightgreen;">E</div>
+        <div  style="background-color:brown;">F</div>
+    </div>
+    <div id="content">
+        <div class="box" style="background-color:red;">A</div>
+        <div class="box" style="background-color:lightblue;">B</div>
+        <div class="box" style="background-color:yellow;">C</div>
+        <div class="box1" style="background-color:brown;">D</div>
+        <div class="box1" style="background-color:lightgreen;">E</div>
+        <div class="box" style="background-color:brown;">F</div>
+    </div>
+</body>
+
+</html>
